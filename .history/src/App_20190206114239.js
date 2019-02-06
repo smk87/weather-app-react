@@ -2,11 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import logo from "./logo.svg";
 import "./App.css";
-
-//Import Layout Components
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
 
 class App extends Component {
   render() {
@@ -14,8 +10,6 @@ class App extends Component {
       <Router>
         <div className="App">
           <NavBar />
-          <Home/>
-          <Footer />
         </div>
       </Router>
     );

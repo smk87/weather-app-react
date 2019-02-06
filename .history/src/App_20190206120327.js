@@ -6,7 +6,6 @@ import "./App.css";
 //Import Layout Components
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
 
 class App extends Component {
   render() {
@@ -14,7 +13,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <NavBar />
-          <Home/>
+
           <Footer />
         </div>
       </Router>
