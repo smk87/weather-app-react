@@ -18,6 +18,10 @@ export default class Home extends Component {
               className="ml-2 btn btn-primary"
               value="Find"
             />
+            <Weather /> <Weather /> <Weather />
+            <Weather />
+            <Weather />
+            <Weather />
           </form>
         </div>
       </div>

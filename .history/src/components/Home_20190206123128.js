@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Weather from "./Weather";
 
 export default class Home extends Component {
   render() {
@@ -13,11 +12,7 @@ export default class Home extends Component {
               className="form-control col-md-10"
               placeholder="Find your location..."
             />
-            <input
-              type="submit"
-              className="ml-2 btn btn-primary"
-              value="Find"
-            />
+            <input type="submit" className=" btn btn-primary" value="Find" />
           </form>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Weather from "./Weather";
 
 export default class Home extends Component {
   render() {
@@ -18,6 +17,20 @@ export default class Home extends Component {
               className="ml-2 btn btn-primary"
               value="Find"
             />
+
+            <div className="mt-5 card">
+              <img
+                src="http://3.bp.blogspot.com/-9j20aNDWQFk/UQgZBMrATQI/AAAAAAAAlXM/b2d4T6ZvFbo/s1600/598.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
           </form>
         </div>
       </div>

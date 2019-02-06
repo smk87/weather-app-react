@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Weather from "./Weather";
 
 export default class Home extends Component {
   render() {
@@ -15,7 +14,7 @@ export default class Home extends Component {
             />
             <input
               type="submit"
-              className="ml-2 btn btn-primary"
+              className=" col-md-1 btn btn-primary"
               value="Find"
             />
           </form>

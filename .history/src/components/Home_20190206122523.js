@@ -1,23 +1,24 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Weather from "./Weather";
 
 export default class Home extends Component {
   render() {
     return (
       <div>
-        <div class="container">
+        <div style={position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;} class="container">
           <form action="#" class="form-inline">
             <input
               type="text"
-              className="form-control col-md-10"
+              className="form-control"
               placeholder="Find your location..."
             />
-            <input
-              type="submit"
-              className="ml-2 btn btn-primary"
-              value="Find"
-            />
+            <input type="submit" value="Find" />
           </form>
         </div>
       </div>
