@@ -15,19 +15,14 @@ export default class Home extends Component {
       [e.target.name]: e.target.value
     });
   };
-  onSubmit = e => {
-    e.preventDefault();
-    console.log(this.state);
-  };
-
+  onSubmit = e => {};
   render() {
     return (
       <div>
         <div class="container">
-          <form onSubmit={this.onSubmit} action="#" class="form-inline">
+          <form onSubmit={() => this.onSubmit()} action="#" class="form-inline">
             <input
               type="text"
-              name="search"
               className="form-control col-md-10"
               placeholder="Find your location..."
               value={this.state.search}
@@ -40,7 +35,7 @@ export default class Home extends Component {
             />
           </form>
           <Link to="/weather/:woeid">
-            <Weather id="123" />
+            <Weather />
           </Link>
         </div>
       </div>

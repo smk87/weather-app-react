@@ -24,7 +24,7 @@ export default class Home extends Component {
     return (
       <div>
         <div class="container">
-          <form onSubmit={this.onSubmit} action="#" class="form-inline">
+          <form onSubmit={() => this.onSubmit()} action="#" class="form-inline">
             <input
               type="text"
               name="search"
@@ -40,7 +40,7 @@ export default class Home extends Component {
             />
           </form>
           <Link to="/weather/:woeid">
-            <Weather id="123" />
+            <Weather />
           </Link>
         </div>
       </div>

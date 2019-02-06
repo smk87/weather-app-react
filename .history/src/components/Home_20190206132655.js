@@ -40,7 +40,7 @@ export default class Home extends Component {
             />
           </form>
           <Link to="/weather/:woeid">
-            <Weather id="123" />
+            <Weather />
           </Link>
         </div>
       </div>

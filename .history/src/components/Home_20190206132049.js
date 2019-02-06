@@ -10,28 +10,17 @@ export default class Home extends Component {
       search: ""
     };
   }
-  onChange = e => {
-    this.setState({
-      [e.target.name]: e.target.value
-    });
-  };
-  onSubmit = e => {
-    e.preventDefault();
-    console.log(this.state);
-  };
 
+  onSubmit = e => {};
   render() {
     return (
       <div>
         <div class="container">
-          <form onSubmit={this.onSubmit} action="#" class="form-inline">
+          <form onSubmit={() => this.onSubmit()} action="#" class="form-inline">
             <input
               type="text"
-              name="search"
               className="form-control col-md-10"
               placeholder="Find your location..."
-              value={this.state.search}
-              onChange={this.onChange}
             />
             <input
               type="submit"
@@ -40,7 +29,7 @@ export default class Home extends Component {
             />
           </form>
           <Link to="/weather/:woeid">
-            <Weather id="123" />
+            <Weather />
           </Link>
         </div>
       </div>
