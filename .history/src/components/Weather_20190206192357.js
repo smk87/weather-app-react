@@ -16,6 +16,9 @@ export default class Weather extends Component {
     };
   }
 
+  onClick = () => {
+    <Link />;
+  };
   componentWillMount() {
     this.setState({ id: this.props.id });
 
@@ -24,7 +27,7 @@ export default class Weather extends Component {
     axios
       .get(url) //Used proxy to connect with local wamp server
       .then(res => {
-        // console.log(res.data);
+        console.log(res.data);
 
         switch (res.data.consolidated_weather[0].weather_state_name) {
           case "Snow":
@@ -89,9 +92,6 @@ export default class Weather extends Component {
   }
 
   render() {
-    const newTo = {
-      pathname: `/weather/${this.state.id}`
-    };
     return (
       <div className=" mt-5 mx-auto h-50 w-25 card">
         <img
@@ -118,10 +118,10 @@ export default class Weather extends Component {
             {this.state.mintemp}
             <span>&#8451;</span>
           </div>
-          <p />
-          <Link to={newTo}>
-            <button type="button" className="btn btn-success">
-              View Details
+
+          <Link>
+            <button type="button" class="btn btn-secondary">
+              Secondary
             </button>
           </Link>
         </div>

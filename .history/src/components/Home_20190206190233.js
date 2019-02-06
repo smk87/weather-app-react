@@ -17,7 +17,7 @@ export default class Home extends Component {
   };
   onSubmit = e => {
     e.preventDefault();
-    console.log(this.state.search);
+    console.log(this.state);
   };
 
   render() {
@@ -33,7 +33,6 @@ export default class Home extends Component {
               value={this.state.search}
               onChange={this.onChange}
             />
-
             <input
               type="submit"
               className="ml-2 btn btn-primary"

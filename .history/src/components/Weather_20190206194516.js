@@ -120,7 +120,7 @@ export default class Weather extends Component {
           </div>
           <p />
           <Link to={newTo}>
-            <button type="button" className="btn btn-success">
+            <button type="button" class="btn btn-success">
               View Details
             </button>
           </Link>

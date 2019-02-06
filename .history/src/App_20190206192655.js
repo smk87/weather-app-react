@@ -3,11 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import logo from "./logo.svg";
 import "./App.css";
 
-//Import All Components
+//Import Layout Components
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import DetailedWeather from "./components/DetailedWeather";
 
 class App extends Component {
   render() {
@@ -16,8 +15,7 @@ class App extends Component {
         <div className="App">
           <NavBar />
           <Route exact path="/" component={Home} />
-          <Route exact path="/search/:keyword" component={Home} />
-          <Route exact path="/weather/:woeid" component={DetailedWeather} />
+          <Route exact path="/weather/:woeid" component={Home} />
           <Footer />
         </div>
       </Router>

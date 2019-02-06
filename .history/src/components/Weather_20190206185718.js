@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 export default class Weather extends Component {
   constructor() {
@@ -24,7 +24,7 @@ export default class Weather extends Component {
     axios
       .get(url) //Used proxy to connect with local wamp server
       .then(res => {
-        // console.log(res.data);
+        console.log(res.data);
 
         switch (res.data.consolidated_weather[0].weather_state_name) {
           case "Snow":
@@ -89,16 +89,9 @@ export default class Weather extends Component {
   }
 
   render() {
-    const newTo = {
-      pathname: `/weather/${this.state.id}`
-    };
     return (
-      <div className=" mt-5 mx-auto h-50 w-25 card">
-        <img
-          src={this.state.logo}
-          className="card-img-top pl-2 pr-2"
-          alt="..."
-        />
+      <div className=" mt-5 mx-auto h-50 w-25 px-auto card">
+        <img src={this.state.logo} className="card-img-top pl-2 pr-2" alt="..." />
         <div className="card-body">
           <div className="card-text">
             <h2>{this.state.cityname}</h2>
@@ -118,11 +111,13 @@ export default class Weather extends Component {
             {this.state.mintemp}
             <span>&#8451;</span>
           </div>
-          <p />
-          <Link to={newTo}>
-            <button type="button" className="btn btn-success">
-              View Details
-            </button>
+
+          <Link to="/weather/:woeid">
+            <input
+              type="submit"
+              className="mt-2 btn btn-success"
+              value="View Details"
+            />
           </Link>
         </div>
       </div>

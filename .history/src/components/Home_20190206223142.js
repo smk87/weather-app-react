@@ -33,12 +33,13 @@ export default class Home extends Component {
               value={this.state.search}
               onChange={this.onChange}
             />
-
-            <input
-              type="submit"
-              className="ml-2 btn btn-primary"
-              value="Find"
-            />
+            <Link to="/">
+              <input
+                type="submit"
+                className="ml-2 btn btn-primary"
+                value="Find"
+              />
+            </Link>
           </form>
 
           <form className="form-inline">

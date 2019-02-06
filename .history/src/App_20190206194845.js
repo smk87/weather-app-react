@@ -17,7 +17,12 @@ class App extends Component {
           <NavBar />
           <Route exact path="/" component={Home} />
           <Route exact path="/search/:keyword" component={Home} />
-          <Route exact path="/weather/:woeid" component={DetailedWeather} />
+          <Route
+            exact
+            path="/weather/:woeid"
+            props={hhh:123}
+            component={DetailedWeather}
+          />
           <Footer />
         </div>
       </Router>
