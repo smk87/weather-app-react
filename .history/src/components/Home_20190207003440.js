@@ -27,19 +27,16 @@ export default class Home extends Component {
             <input
               type="text"
               name="search"
-              className="form-control col-md-11"
+              className="form-control col-md-10"
               placeholder="Find your location..."
               value={this.state.search}
               onChange={this.onChange}
             />
-
-            <Link to={newTo}>
-              <input
-                type="submit"
-                className="ml-3 btn btn-primary"
-                value="Find"
-              />
-            </Link>
+            <input
+              type="submit"
+              className="ml-2 btn btn-primary"
+              value="Find"
+            />
           </form>
 
           <form className="form-inline">

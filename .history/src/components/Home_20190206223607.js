@@ -15,19 +15,20 @@ export default class Home extends Component {
       [e.target.name]: e.target.value
     });
   };
+  onSubmit = e => {
+    e.preventDefault();
+    console.log(this.state.search);
+  };
 
   render() {
-    const newTo = {
-      pathname: `/search/${this.state.search}`
-    };
     return (
       <div>
         <div className="container">
-          <form className="form-inline">
+          <form onSubmit={this.onSubmit} action="#" className="form-inline">
             <input
               type="text"
               name="search"
-              className="form-control col-md-11"
+              className="form-control col-md-10"
               placeholder="Find your location..."
               value={this.state.search}
               onChange={this.onChange}
@@ -36,7 +37,7 @@ export default class Home extends Component {
             <Link to={newTo}>
               <input
                 type="submit"
-                className="ml-3 btn btn-primary"
+                className="ml-2 btn btn-primary"
                 value="Find"
               />
             </Link>

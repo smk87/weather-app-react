@@ -27,7 +27,7 @@ export default class Home extends Component {
             <input
               type="text"
               name="search"
-              className="form-control col-md-11"
+              className="form-control col-md-8"
               placeholder="Find your location..."
               value={this.state.search}
               onChange={this.onChange}

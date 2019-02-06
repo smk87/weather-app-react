@@ -32,7 +32,7 @@ export default class DetailedWeather extends Component {
   render() {
     return (
       <div>
-        <h1>Weather Forecasts Of {this.state.cityname} In Next 6 Days</h1>
+        <h1>Weather Forecasts Of {this.state.cityname}</h1>
         {this.state.detailedweather.map(c => (
           <ConsolidatedWeather
             temp={c.the_temp}
