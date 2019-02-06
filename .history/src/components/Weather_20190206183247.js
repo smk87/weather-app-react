@@ -93,7 +93,7 @@ export default class Weather extends Component {
         <img src={this.state.logo} className="card-img-top" alt="..." />
         <div className="card-body">
           <div className="card-text">
-            <h2>{this.state.cityname}</h2>
+            <h5>City: </h5> {this.state.cityname}
           </div>
           <div className="card-text">
             <h5>Temparature: </h5> {this.state.temp}
@@ -109,12 +109,12 @@ export default class Weather extends Component {
             <h5>Minimum Temparature: </h5>
             {this.state.mintemp}
             <span>&#8451;</span>
+            <input
+              type="submit"
+              className="ml-2 btn btn-primary"
+              value="Find"
+            />
           </div>
-          <input
-            type="submit"
-            className="mt-2 btn btn-success"
-            value="View Details"
-          />
         </div>
       </div>
     );

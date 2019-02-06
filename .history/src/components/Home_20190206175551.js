@@ -40,10 +40,21 @@ export default class Home extends Component {
             />
           </form>
           <Weather id="2344116" />
-          <Weather id="638242" />
-          <Weather id="44418" />
-          <Weather id="565346" />
-          <Weather id="560743" /> <Weather id="9807" />
+          <div class="row">
+            <div class="col col-md-3">
+              <div class="card h-100">
+                <p class="card-body">This card on the left of the other two cards, with a fixed height and scrolling.</p>
+              </div>
+            </div>
+            <div class="col col-md-9">
+              <div class="card">
+                <p class="card-body">How do you want to ask the question?<p>
+            </div>
+                  <div class="card">
+                    <p class="card-body">How should students ask the question?</p>
+                  </div>
+        </div>
+              </div>
         </div>
       </div>
     );

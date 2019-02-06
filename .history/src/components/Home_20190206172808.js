@@ -39,11 +39,18 @@ export default class Home extends Component {
               value="Find"
             />
           </form>
-          <Weather id="2344116" />
-          <Weather id="638242" />
-          <Weather id="44418" />
-          <Weather id="565346" />
-          <Weather id="560743" /> <Weather id="9807" />
+
+          <div style={{ display: "inline - block" }}>
+            <Link to="/weather/:woeid">
+              <Weather id="2344116" />
+            </Link>
+            <Link to="/weather/:woeid">
+              <Weather id="2344116" />
+            </Link>
+            <Link to="/weather/:woeid">
+              <Weather id="2344116" />
+            </Link>
+          </div>
         </div>
       </div>
     );

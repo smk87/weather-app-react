@@ -93,7 +93,7 @@ export default class Weather extends Component {
         <img src={this.state.logo} className="card-img-top" alt="..." />
         <div className="card-body">
           <div className="card-text">
-            <h2>{this.state.cityname}</h2>
+            <h3>{this.state.cityname}</h3>
           </div>
           <div className="card-text">
             <h5>Temparature: </h5> {this.state.temp}

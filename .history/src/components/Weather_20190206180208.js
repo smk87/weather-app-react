@@ -89,33 +89,36 @@ export default class Weather extends Component {
 
   render() {
     return (
-      <div className=" mt-5 mx-auto h-50 w-25 card">
-        <img src={this.state.logo} className="card-img-top" alt="..." />
-        <div className="card-body">
-          <div className="card-text">
-            <h2>{this.state.cityname}</h2>
+      <div className="mt-5 mr-2 h-50 w-25 card">
+        <div className="col col-md-3">
+          <div class="card h-100">
+            <p class="card-body">
+              <div>
+                <img src={this.state.logo} className="card-img-top" alt="..." />
+              </div>
+              <div className="card-text">
+                <h5>City: </h5> {this.state.cityname}
+              </div>
+              <div className="card-text">
+                <h5>Temparature: </h5> {this.state.temp}
+                <span>&#8451;</span>
+              </div>
+              <div className="card-text">
+                {" "}
+                <h5>Maximum Temparature: </h5> {this.state.maxtemp}
+                <span>&#8451;</span>
+              </div>
+              <div className="card-text">
+                {" "}
+                <h5>Minimum Temparature: </h5>
+                {this.state.mintemp}
+                <span>&#8451;</span>
+              </div>
+            </p>
           </div>
-          <div className="card-text">
-            <h5>Temparature: </h5> {this.state.temp}
-            <span>&#8451;</span>
-          </div>
-          <div className="card-text">
-            {" "}
-            <h5>Maximum Temparature: </h5> {this.state.maxtemp}
-            <span>&#8451;</span>
-          </div>
-          <div className="card-text">
-            {" "}
-            <h5>Minimum Temparature: </h5>
-            {this.state.mintemp}
-            <span>&#8451;</span>
-          </div>
-          <input
-            type="submit"
-            className="mt-2 btn btn-success"
-            value="View Details"
-          />
         </div>
+
+        <div className="card-body" />
       </div>
     );
   }

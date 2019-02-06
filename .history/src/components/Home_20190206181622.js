@@ -39,11 +39,12 @@ export default class Home extends Component {
               value="Find"
             />
           </form>
-          <Weather id="2344116" />
-          <Weather id="638242" />
-          <Weather id="44418" />
-          <Weather id="565346" />
-          <Weather id="560743" /> <Weather id="9807" />
+          <div className="card" style="width: 18rem;">
+            <img className="card-img-top" src="..." alt="Card image cap" />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+            </div>
+          </div>
         </div>
       </div>
     );
