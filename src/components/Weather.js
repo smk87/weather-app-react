@@ -19,7 +19,7 @@ export default class Weather extends Component {
   componentWillMount() {
     this.setState({ id: this.props.id });
 
-    const url = `/weather/weather.php?command=location&woeid=${this.props.id}`;
+    const url = `http://devhub.rf.gd/index.php?command=location&woeid=${this.props.id}`;
     // console.log(url);
     axios
       .get(url) //Used proxy to connect with local wamp server
