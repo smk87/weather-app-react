@@ -19,6 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy" : "http://devhub.rf.gd",
   "eslintConfig": {
     "extends": "react-app"
   },
