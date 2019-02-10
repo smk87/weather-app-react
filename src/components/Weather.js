@@ -19,7 +19,7 @@ export default class Weather extends Component {
   componentWillMount() {
     this.setState({ id: this.props.id });
 
-    const url = `https://weather-app-smk.herokuapp.com/https://www.metaweather.com/api/location/${this.props.id}`;
+    const url = `https://weather-app-smk.herokuapp.com/https://mistbill.000webhostapp.com/weather.php?command=location&woeid=${this.props.id}`;
     // console.log(url);
     axios
       .get(url) //Used proxy to connect with local wamp server
