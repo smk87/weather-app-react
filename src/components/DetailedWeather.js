@@ -14,7 +14,7 @@ export default class DetailedWeather extends Component {
   }
 
   componentWillMount() {
-    const url = `weather/weather.php?command=location&woeid=${
+    const url = `https://mistbill.000webhostapp.com/weather.php?command=location&woeid=${
       this.props.match.params.woeid
     }`;
     // console.log(url);
