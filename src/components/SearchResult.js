@@ -26,7 +26,7 @@ export default class SearchResult extends Component {
       search: this.props.match.params.keyword
     });
 
-    let url = `/weather/weather.php?command=search&keyword=${
+    let url = `https://mistbill.000webhostapp.com/weather.php?command=search&keyword=${
       this.props.match.params.keyword
     }`;
     console.log(url);
